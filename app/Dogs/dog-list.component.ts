@@ -12,7 +12,7 @@ import { Pet } from '../pet';
       <li class="mdl-list__item" *ngFor="let dog of dogs | async">
         <span class="mdl-list__item-primary-content">
             <i class="material-icons mdl-list__item-icon">pets</i>
-            <a [routerLink]="['/dogs', dog.id.$t]">{{dog.name}}</a>
+            <a [routerLink]="['/dogs', dog.id.$t]">{{dog.name.$t}}</a>
         </span>
       </li>
     </ul>
