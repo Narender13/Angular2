@@ -4,9 +4,15 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { dogRoutes }    from './dogs/dog.routes';
-import { catRoutes }    from './cats/cat.routes';
+//import { dogRoutes }    from './dogs/dog.routes';
+//import { catRoutes }    from './cats/cat.routes';
+
+import { CatListComponent } from './Cats/cat-list.component';
+import { CatDetailsComponent } from './Cats/cat-details.component';
+import { DogListComponent }    from './Dogs/dog-list.component';
+import { DogDetailsComponent }    from './Dogs/dog-details.component';
 import { aboutComponent }    from './about/about.component';
+import{PageNotFoundComponent} from './404notfound/pagenotfound.component';
 
 // Route Configuration
 export const routes: Routes = [
@@ -15,10 +21,12 @@ export const routes: Routes = [
     redirectTo: '/dogs',
     pathMatch: 'full'
   },
-   { path: 'about', component: aboutComponent },
-
-  ...catRoutes,
-  ...dogRoutes
+  { path: 'about', component: aboutComponent },
+  { path: 'cats', component: CatListComponent },
+  { path: 'cats/:id', component: CatDetailsComponent },
+  { path: 'dogs', component: DogListComponent },
+  { path: 'dogs/:id', component: DogDetailsComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 // Deprecated provide

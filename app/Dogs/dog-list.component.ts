@@ -7,12 +7,12 @@ import { Pet } from '../pet';
 @Component({
   template: `
     <h2>Dogs</h2>
-    <p>List of dogs</p>
+    <p class="text-center">List of dogs</p>
     <ul class="demo-list-icon mdl-list">
       <li class="mdl-list__item" *ngFor="let dog of dogs | async">
         <span class="mdl-list__item-primary-content">
             <i class="material-icons mdl-list__item-icon">pets</i>
-            <a [routerLink]="['/dogs', dog.id.$t]">{{dog.name.$t}}</a>
+            <a [routerLink]="['/dogs', dog.id.$t]">{{dog.name}}</a>
         </span>
       </li>
     </ul>

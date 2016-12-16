@@ -31,12 +31,13 @@ export class DogDetailsComponent implements OnInit {
       this.sub = this.route.params.subscribe(params => {
         let id = params['id'];
        // Retrieve Pet with Id route param
-        this.petService.findPetById(id).subscribe(dog => this.dog = dog);
+        this.petService.findPetById(id).subscribe(dog => {
+        this.dog = dog});
     });
   }
 
   ngOnDestroy() {
-      // Clean sub to avoid memory leak
+    // Clean sub to avoid memory leak
     this.sub.unsubscribe();
   }
 }
