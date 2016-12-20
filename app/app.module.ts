@@ -2,7 +2,8 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
-
+//import { dogRoutes }    from './dogs/dog.routes';
+//import { catRoutes }    from './cats/cat.routes';
 import { AppComponent }         from './app.component';
 import { CatListComponent }   from './Cats/cat-list.component';
 import { CatDetailsComponent }  from './Cats/cat-details.component';
@@ -22,5 +23,6 @@ import { routing } from './app.routes';
   bootstrap: [ AppComponent,CatListComponent,CatDetailsComponent,DogListComponent,DogDetailsComponent,aboutComponent,PageNotFoundComponent]
 })
 export class AppModule {
+
 }
 
