@@ -1,5 +1,5 @@
 // Imports
-import { Injectable }    from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Jsonp, URLSearchParams } from '@angular/http';
 import { Pet } from './pet'
 import 'rxjs/add/operator/map';
