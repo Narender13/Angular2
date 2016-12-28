@@ -14,6 +14,7 @@ import { DogDetailsComponent }    from './Dogs/dog-details.component';
 import { aboutComponent }    from './about/about.component';
 import{PageNotFoundComponent} from './404notfound/pagenotfound.component';
 import {formvalidateComponent} from './contact_us/contact_us.component'
+import {userComponent} from './User/user.component';
 
 // Route Configuration
 export const routes: Routes = [
@@ -28,6 +29,7 @@ export const routes: Routes = [
   { path: 'dogs', component: DogListComponent },
   { path: 'contactUs', component: formvalidateComponent },
   { path: 'dogs/:id', component: DogDetailsComponent },
+   { path: 'user', component: userComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

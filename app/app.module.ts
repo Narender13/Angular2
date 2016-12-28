@@ -12,7 +12,8 @@ import { DogListComponent }      from './Dogs/dog-list.component';
 import { DogDetailsComponent }  from './Dogs/dog-details.component';
 import { aboutComponent }  from './about/about.component';
 import{PageNotFoundComponent} from './404notfound/pagenotfound.component';
-import {formvalidateComponent} from './contact_us/contact_us.component'
+import {formvalidateComponent} from './contact_us/contact_us.component';
+import {userComponent} from './User/user.component';
 
 import { PetService }          from './pet.service';
 import { Pet }          from './pet';
@@ -20,9 +21,9 @@ import { routing } from './app.routes';
 
 @NgModule({
   imports: [ BrowserModule,FormsModule, HttpModule,JsonpModule,routing,ReactiveFormsModule],
-  declarations: [AppComponent,CatListComponent,CatDetailsComponent,DogListComponent,DogDetailsComponent,aboutComponent,PageNotFoundComponent,formvalidateComponent],
+  declarations: [AppComponent,CatListComponent,CatDetailsComponent,DogListComponent,DogDetailsComponent,aboutComponent,PageNotFoundComponent,formvalidateComponent,userComponent],
   providers: [ PetService],
-  bootstrap: [ AppComponent,CatListComponent,CatDetailsComponent,DogListComponent,DogDetailsComponent,aboutComponent,PageNotFoundComponent,formvalidateComponent]
+  bootstrap: [ AppComponent,CatListComponent,CatDetailsComponent,DogListComponent,DogDetailsComponent,aboutComponent,PageNotFoundComponent,formvalidateComponent,userComponent]
 })
 export class AppModule {
 

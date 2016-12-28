@@ -38,6 +38,9 @@ import { Component } from '@angular/core';
     <li class="nav-item">
       <a class="nav-link" [routerLink]="['/contactUs']">Contact Us</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/user']">User</a>
+    </li>
     
     
   </ul>
