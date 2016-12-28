@@ -13,6 +13,7 @@ import { DogListComponent }    from './Dogs/dog-list.component';
 import { DogDetailsComponent }    from './Dogs/dog-details.component';
 import { aboutComponent }    from './about/about.component';
 import{PageNotFoundComponent} from './404notfound/pagenotfound.component';
+import {formvalidateComponent} from './contact_us/contact_us.component'
 
 // Route Configuration
 export const routes: Routes = [
@@ -25,6 +26,7 @@ export const routes: Routes = [
   { path: 'cats', component: CatListComponent },
   { path: 'cats/:id', component: CatDetailsComponent },
   { path: 'dogs', component: DogListComponent },
+  { path: 'contactUs', component: formvalidateComponent },
   { path: 'dogs/:id', component: DogDetailsComponent },
   { path: '**', component: PageNotFoundComponent }
 ];

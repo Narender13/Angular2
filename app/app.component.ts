@@ -36,7 +36,7 @@ import { Component } from '@angular/core';
       <a class="nav-link"  [routerLink]="['/about']">About Us</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/contact']">Contact Us</a>
+      <a class="nav-link" [routerLink]="['/contactUs']">Contact Us</a>
     </li>
     
     
